@@ -37,9 +37,8 @@ function sendEmailViaGmail() {
     var label = row[0]; // First Column 
     var emailAddress = row[1];  // Second column
     // *Use any of the below strategy of line 34,35 to define search criteria*
+    var searchLabel = label;
     //var searchLabel = 'label:[Gmail]/someLabel after:2015/9/15 before:2016/7/1';
-    //var searchLabel = label;
-    
     var threads = GmailApp.search(searchLabel);
     var messagesLeft = actualBatch ;
     
