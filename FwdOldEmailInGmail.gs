@@ -4,7 +4,7 @@
  Development time taken: few mins, Developer gives no guarantees. Please do read "ReadMe.md" before applying the script. 
  */
 
-function sendEmailViaGmail() {
+function fwdOldMailInGmail() {
   // Save Google Sheet with two columns and as many rows as you want and give its url in line #3 
   var sheet =  SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/<sheetID>/edit').getSheets()[0]; //Get First Active Sheet 
   var startRow = 3;  // First row of data to process
