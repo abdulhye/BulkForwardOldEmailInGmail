@@ -24,4 +24,6 @@ TotalThreadsSent (set to 0, this number will be set by script to let you know ho
 
 
 # CAUTION
-Script might fail because of API issues (Invalid MIME type error, Exception occured etc). During that scenario, you can check Script properties (ScriptEditor: File->Project Properties -> Script Properties) to see what is the CurrentThread and CurrentMessage. Also you can see the error message by going to View -> Logs in Script Editor. If script is failing again n again, search for the email on Gmail, manually forward it and then go to Script Editor, File->Project Properties -> Script Properties.  increment CurrentThread to next number and CurrentMessage to 0. 
+Script might fail because of API issues (Invalid MIME type error, Exception occured etc). During that scenario, you can check Script properties (ScriptEditor: File->Project Properties -> Script Properties) to see what is the CurrentThread and CurrentMessage. Also you can see the error message by going to View -> Logs in Script Editor. If script is failing again n again, search for the email on Gmail, manually forward it and then go to Script Editor, File->Project Properties -> Script Properties.  increment CurrentThread to next number and CurrentMessage to 0 and Re-Run Script. 
+
+SCRIPT will be NO-OP once 100 Messages are sent for the day. If you have PREMIUM account, you can update batch size from Script Properties.
