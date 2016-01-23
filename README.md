@@ -26,5 +26,5 @@ TotalThreadsSent (set to 0, this number will be set by script to let you know ho
 # CAUTION
 Script might fail because of API issues (Invalid MIME type error, Exception occured etc). During that scenario, you can see the error message by going to View -> Logs in Script Editor. You can also check CurrentThread and CurrentMessage numbers by going to Script properties (ScriptEditor: File->Project Properties -> Script Properties) to see what are the current numbers. If script is failing again and again, search for the email on Gmail, manually forward it and then go to Script Editor, File->Project Properties -> Script Properties.  increment CurrentThread to next number and CurrentMessage to 0 and Re-Run Script. 
 
-SCRIPT will be NO-OP once 100 Messages are sent for the day or all threads have been sent. If you have PREMIUM account, you can update batch size from Script Properties to the number Google allows for your account.
+SCRIPT will be NO-OP once Batch-Size(normally 100) Messages are sent for the day or all threads have been sent. If you have PREMIUM account, you can update batch size from Script Properties to the number Google allows for your account.
  
