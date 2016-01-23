@@ -7,8 +7,8 @@ Very recently, my father passed away on 23rd december 2015. While overcoming the
 During this stressful time, I looked at a few examples. I admit here that I have never coded in GoogleScript before. This was a few mins effort to send old emails in my father's inbox to an email account of a relevant person in his organization.
 
 # Things to do before running the script.
-1.Create a filter based on a search criteria for old emails that you want to forward. Assign it a label. 
-2. If you think, new incoming emails might add more threads to the said label then Create a new filter for it and assign it a new label / fwd it to any email address that you want. Just make sure that THREAD COUNT for Step 1 LABEL, DOES NOT CHANGE. This is REQUIREMENT because Google only allows to Forward 100 Messages / day. 
+1. Create a filter based on a search criteria for old emails that you want to forward. Assign it a label.
+2. If you think, new incoming emails might add more threads to the said label then Create a new filter for it and assign it a new label / fwd it to any email address that you want. Just make sure that THREAD COUNT for Step 1 LABEL, DOES NOT CHANGE. This is REQUIREMENT because Google only allows to Forward 100 Messages / day.
 3. Open up a Google sheet, add two columns , GmailLabel . AutoForwardEmail  and then put the label and email address in the file (see example image Forward_Old_Email at https://goo.gl/photos/5FyZP8RA58TxpXJKA ) 
 4. In Google Sheet, Go to Tools -> Script Editor  ; Copy paste the script FwdOldMailInGmail script 
 5. In Script Editor, go to File -> Project Properties-> Script Properties. Set four (4) variables. 
