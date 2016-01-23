@@ -9,7 +9,7 @@ During this stressful time, I looked at a few examples. I admit here that I have
 # Things to do before running the script.
 1. Create a filter based on a search criteria for old emails that you want to forward. Assign it a label.
 2. If you think, new incoming emails might add more threads to the said label then Create a new filter for it and assign it a new label / fwd it to any email address that you want. Just make sure that THREAD COUNT for Step 1 LABEL, DOES NOT CHANGE. This is REQUIREMENT because Google only allows to Forward 100 Messages / day.
-3. Open up a Google sheet, add two columns , GmailLabel . AutoForwardEmail  and then put the label and email address in the file (see example image Forward_Old_Email at https://goo.gl/photos/5FyZP8RA58TxpXJKA ) 
+3. Open up a Google sheet, add two columns , GmailLabel . AutoForwardEmail  and then put the label and email address in the file (see example image Forward_Old_Email at https://goo.gl/photos/5FyZP8RA58TxpXJKA ). Save Google Sheet and Copy its link.
 4. In Google Sheet, Go to Tools -> Script Editor  ; Copy paste the script FwdOldMailInGmail script 
 5. In Script Editor, go to File -> Project Properties-> Script Properties. Set four (4) variables. 
 CurrentMessage (set to 0) 
@@ -24,6 +24,7 @@ TotalThreadsSent (set to 0, this number will be set by script to let you know ho
 
 
 # CAUTION
-Script might fail because of API issues (Invalid MIME type error, Exception occured etc). During that scenario, you can check Script properties (ScriptEditor: File->Project Properties -> Script Properties) to see what is the CurrentThread and CurrentMessage. Also you can see the error message by going to View -> Logs in Script Editor. If script is failing again n again, search for the email on Gmail, manually forward it and then go to Script Editor, File->Project Properties -> Script Properties.  increment CurrentThread to next number and CurrentMessage to 0 and Re-Run Script. 
+Script might fail because of API issues (Invalid MIME type error, Exception occured etc). During that scenario, you can see the error message by going to View -> Logs in Script Editor. You can also check CurrentThread and CurrentMessage numbers by going to Script properties (ScriptEditor: File->Project Properties -> Script Properties) to see what are the current numbers. If script is failing again and again, search for the email on Gmail, manually forward it and then go to Script Editor, File->Project Properties -> Script Properties.  increment CurrentThread to next number and CurrentMessage to 0 and Re-Run Script. 
 
-SCRIPT will be NO-OP once 100 Messages are sent for the day. If you have PREMIUM account, you can update batch size from Script Properties.
+SCRIPT will be NO-OP once 100 Messages are sent for the day or all threads have been sent. If you have PREMIUM account, you can update batch size from Script Properties to the number Google allows for your account.
+ 
