@@ -1,4 +1,4 @@
-# Script to Send Email via Google Script API 
+# Script to Forward Old Email in Gmail via Google Script API 
 #Disclaimer: 
 Developed in stressful times and script comes with no guarantees
 
@@ -11,7 +11,7 @@ During this stressful time, i looked at few examples. I admit here that I never 
 1. Please create a filter upon a search criteria for all incoming messages to the relevant email address, in this way new emails will be fwded to the account
 2. Create a filter based on old emails and if possible, assign it a label.
 3. Open up a Google sheet, add two columns , GmailLabel . AutoForwardEmail  and then put the label and email address in the file (see example image Forward_Old_Email at https://goo.gl/photos/5FyZP8RA58TxpXJKA ) 
-4. In Google Sheet, Go to Tools -> Script Editor  ; Copy paste the script SendEmailViaGmail script 
+4. In Google Sheet, Go to Tools -> Script Editor  ; Copy paste the script FwdOldMailInGmail script 
 5. In Script Editor, go to File -> Project Properties-> Script Properties. Set four (4) variables. 
 CurrentMessage (set to 0) 
 BatchSize (set to 100, this is the max number of emails that Gmail allows to send in one day) 
