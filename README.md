@@ -1,4 +1,4 @@
-# Script to Forward Old Email in Gmail via Google Script API 
+# Script to Bulk Forward Old Email in Gmail via Google Script API 
 #Disclaimer: 
 Developed in stressful times and script comes with no guarantees
 
